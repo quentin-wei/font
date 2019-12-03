@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-          <p>is ok? yes</p>
+          <p>左边跟我一起画个龙 右边画一道彩虹</p>
           <ul>
             <li v-for="(item,index) in users" :key="index">
               {{item.id}} --:---{{item.name}}
