@@ -41,7 +41,7 @@
       <p>高阶组件 覆盖默认slot</p>
     </HocBaseComSlot>
 
-    <p>1. 查看组件render编译后的渲染函数 this.$options.render</p>
+    <p class="tip">1. 查看组件render编译后的渲染函数 this.$options.render</p>
 
   </div>
 </template>
@@ -86,3 +86,10 @@ export default {
   }
 };
 </script>
+
+
+<style>
+.tip {
+  color: red;
+}
+</style>
