@@ -9,6 +9,7 @@ function resolve(dir) {
 module.exports = {
   // 代码保存时进行eslint检测
   lintOnSave: false,
+  productionSourceMap: false,
 
   chainWebpack: config => {
     config.resolve.alias
