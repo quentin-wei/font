@@ -26,18 +26,18 @@ module.exports = {
 
     // 开发生产环境区分
     if (isPro) {
-      config.optimization.minimizer([
-        new TerserPlugin({
-          terserOptions: {
-            compress: {
-              warnings: false,
-              drop_console: false,
-              drop_debugger: false,
-              pure_funcs: ["console.log"]
-            }
-          }
-        })
-      ]);
+      // config.optimization.minimizer([
+      //   new TerserPlugin({
+      //     terserOptions: {
+      //       compress: {
+      //         warnings: false,
+      //         drop_console: false,
+      //         drop_debugger: false,
+      //         pure_funcs: ["console.log"]
+      //       }
+      //     }
+      //   })
+      // ]);
     } else {
       //  开发环境下
     }

@@ -17,7 +17,7 @@ export default function WithConsole(component) {
           return vnode;
         });
 
-      console.log(slots);
+      // console.log(slots);
 
       return h(
         component,
