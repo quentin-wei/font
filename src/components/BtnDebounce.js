@@ -11,7 +11,7 @@ export default function BtnDebounceHoc(btnCom) {
     props: btnCom.props,
 
     mounted() {
-      console.log("HOC succeed");
+      console.log("HOC succeeds");
     },
 
     methods: {
