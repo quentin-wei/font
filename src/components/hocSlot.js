@@ -24,7 +24,8 @@ export default function WithConsole(component) {
         {
           on: this.$listeners, // 透传事件
           attrs: this.$attrs, // 透传没有被声明为 props 的属性
-          props: this.$props // 透传 props
+          props: this.$props, // 透传 props
+          scopedSlots: this.$scopedSlots // 透传 scopedSlots
         },
         slots
       );

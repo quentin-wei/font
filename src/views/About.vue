@@ -1,27 +1,46 @@
 <template>
   <section class="About">
-    about
+    <BaseButton
+      text="普通按钮"
+      @on-click="handleClick"
+    />
+
+    <HocButton
+      @on-click="hocClick"
+      text="高阶组件"
+    >HocButton</HocButton>
   </section>
 </template>
 
 <script>
-export default {
- name: 'About',
-  data() {
-    return {
+import BaseButton from "@/components/BaseButton";
+import BtnDebounce from "@/components/BtnDebounce.js";
 
+export default {
+  name: "About",
+  data() {
+    return {};
+  },
+  components: {
+    BaseButton,
+    HocButton: BtnDebounce(BaseButton)
+  },
+  methods: {
+    handleClick() {
+      console.log("点击我了");
+    },
+    hocClick() {
+      console.log("hoc click");
     }
   },
-  components: {},
-  methods: {},
   watch: {},
-  mounted() {},
-}
+  mounted() {}
+};
 </script>
 
-<style scoped lang="scss">
- .About{
-   font-size: 14px;
-   color: red;
- }
+<style scoped lang="less">
+.About {
+  font-size: 14px;
+  color: red;
+}
 </style>
