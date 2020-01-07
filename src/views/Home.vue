@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <!-- <p>左边跟我一起画个龙 右边画一道彩虹</p> -->
+    <!-- <p>111111222222</p> -->
     <ul v-if="users.length">
       <li
         v-for="(item,index) in users"
