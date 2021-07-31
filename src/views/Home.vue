@@ -17,7 +17,7 @@ export default {
     return {
       list: [
         { name: 'vue-cli4脚手架' },
-        { name: 'vant按需引入 aaa' },
+        { name: 'vant按需引入 aaa test shell' },
         // { name: '移动端rem适配' },
         // { name: 'axios拦截封装' },
         // { name: 'util工具类函数封装' },
