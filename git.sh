@@ -9,8 +9,13 @@ else
   exit
 fi
 
+if [ ! -n "$subMsg" ]; then
+  echo "not commit msg"
+  exit
+fi
+
 if [ -n "$branch" ]; then
-  # git plo $branch
+  git plo $branch
   git st
   git add .
   git cm "$subMsg"
