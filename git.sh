@@ -11,6 +11,7 @@ fi
 
 if [ ! -n "$subMsg" ]; then
   echo "not commit msg"
+  git plo $branch
   exit
 fi
 
