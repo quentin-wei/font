@@ -8,14 +8,12 @@ else
   echo not on any branch
   exit
 fi
- 
+
 if [ -n "$branch" ]; then
-  git plo $branch
-  sleep 1
+  # git plo $branch
+  git st
   git add .
-  sleep 1
-  git cm $subMsg
-  sleep 1
+  git cm "$subMsg"
   git pho $branch
 fi
 
